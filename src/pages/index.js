@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 import { jobMap } from '../data/jobMap';
 
@@ -27,6 +28,14 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Scotland Foundation Programmes 2022</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+      </Head>
       <header style={{ padding: '10px 20px' }}>
         <h1>Scotland Foundation Programmes 2022</h1>  
         <input aria-label='Filter by text' type="search" onChange={e => {
